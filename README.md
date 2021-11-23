@@ -83,7 +83,7 @@ As in real life, a stack is a pile of things, one on top of the other. In comput
 
 As in real life, a heap is a pile of things, accessible randomly. In computer lingo, it's an area of memory belonging to an application. It is accessible by all threads. Think of it as global memory. Reference types are created on the heap, as are value types that are defined inside a reference type. Reference types are `interface`, `delegate`, `object`, and `string`. `string` is an immutable reference type. Any time you change the value, a new string object is created. That's why `System.Text.StringBuilder` exists.
 
-```
+```c#
 // Here we go. Call SomeMethod();
 SomeMethod();
 

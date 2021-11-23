@@ -73,13 +73,13 @@ A `class` creates a **reference type**, and a `struct` creates a **value type**.
 
 ##### What is a Stack?
 
-<img src="https://user-images.githubusercontent.com/1486348/143114517-d3444400-c217-4a79-86c1-73050948763a.png" style="zoom:50%;" />
+![image](https://user-images.githubusercontent.com/1486348/143116924-e41ada2c-d26c-4a85-8fe5-6f883189c39b.png)
 
 As in real life, a stack is a pile of things, one on top of the other. In computer lingo, it's a stack of values and pointers. Every thread has it's own stack. Value types are created on the stack of the executing thread. Only the top value can be accessed, exposing the next value. When you add a value to the stack, you are **push**ing it. When you retrieve a value from the stack, you are **pop**ping it. `struct` is a value type, as are `bool`, `byte`, `char`, `decimal`, `double`, `enum`, `float`, `int`, `long`, `sbyte`, `short`, `uint`, `ulong`, and `ushort`
 
 ##### What is a heap?
 
-<img src="https://user-images.githubusercontent.com/1486348/143114612-02074345-4ff5-48f8-a9e3-74e64aa83187.png" style="zoom:50%;" />
+![image](https://user-images.githubusercontent.com/1486348/143117139-b90612ab-73f7-4f8a-9580-4d12af13b28d.png)
 
 As in real life, a heap is a pile of things, accessible randomly. In computer lingo, it's an area of memory belonging to an application. It is accessible by all threads. Think of it as global memory. Reference types are created on the heap, as are value types that are defined inside a reference type. Reference types are `interface`, `delegate`, `object`, and `string`. `string` is an immutable reference type. Any time you change the value, a new string object is created. That's why `System.Text.StringBuilder` exists.
 
